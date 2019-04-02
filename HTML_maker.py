@@ -7,7 +7,11 @@ opening = """
     <meta charset="UTF-8">
     <title>Genome application</title>
 </head>
-<body background="background_image.jpg" marginwidth="0" marginheight="0" >
+<body background="background_image.jpg" style=" no-repeat center center fixed; 
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover">
 """
 
 # Define how all html files will end
