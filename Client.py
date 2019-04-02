@@ -18,7 +18,7 @@ def Client(ENDPOINT):
     # Connect to the server
     conn = http.client.HTTPSConnection(HOSTNAME)
     # Send the request
-    conn.request(METHOD, ENDPOINT, None, headers)
+    conn.request(Method, ENDPOINT, None, headers)
     # Wait for ir response
     r = conn.getresponse()
     # Read the response
