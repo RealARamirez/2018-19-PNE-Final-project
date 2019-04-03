@@ -16,10 +16,11 @@ def title(title):
 # Part of the HTML that ends the head and begin the body
 medium = """
 </head>
-<body background="background_image.jpg" style=" no-repeat center center fixed; 
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
+<body style="background-image: url('background_image.jpg');
+no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
 background-size: cover">"""
 
 # Define how all html files will end
