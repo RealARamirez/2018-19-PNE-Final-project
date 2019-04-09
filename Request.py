@@ -1,12 +1,29 @@
 # Program for creating an object that allow us to threat the request as an object
+def mapper(dictionary, arg):
+    value = [False, 0]
+    for key in dictionary:
+        if key.starswith("parameter"):
+            if dictionary[key]["type"] == arg: value = [True, key]
+    return value
+
 class Request:
     def __init__(self, request):
+        # the request given by the GET
         self.request = request
+        # Auxiliary value of type boolean that indicates that the request there are different parameters
         self.value = False
+        # data is a dictionary that will give us the following information
+        # The endpoint assigned to the key endpoint
+        # A dictionary for each parameter, which keys starts with the word parameter and give us its type and its value
+        # If it is a json request with the key json and the possible values Yes/No
         self.data = {"endpoint": "/", "parameter1": {"type": "none", "value": "none"}, "parameter2": {"type": "none", "value": "none"}, "parameter3": {"type": "none", "value": "none"}, "json": "no"}
+        # Fix the endpoint
         self.data["endpoint"] = self.request.split("?")[0]
+        # Fis if it is json
         if self.request.split("?")[-1] == "json=1": self.data["json"] = "yes"
-        if self.request.split("?") > 1: self.value = True
+        # Assign value True if the function could contain parameters
+        if len(self.request.split("?")) > 1: self.value = True
+        # Fix the different values and types in the dictionary of each parameter
         if self.value and self.request.split("?")[1] != "json=1":
             b = 1
             for elem in self.request.split("?")[1].split("&"):
@@ -17,6 +34,7 @@ class Request:
                     b += 1
         return
 
+    # This method will assign the str value of the request to the object
     def __str__(self):
         return self.request
 
@@ -26,12 +44,37 @@ class Request:
         else: return False
 
     # The method will give the client the endpoint it must use according to the request
+    # It will give a dictionary
+    # The key type will tell the server if it should return an error page or it should execute a client with a determined path
+    # The key value will give that error message or that path respectively
     def answer(self):
-        dictionary = {}
-        if self.endpoint() == "listSpecies": return "/info/species?content-type=application/json"
-        elif self.endpoint() == "karyotype" or self.endpoint() == "chromosomeLength": return "/info/assembly/{}?content-type=application/json".format(self.parameters().get("specie"))
-        elif self.endpoint() == "geneSeq" or self.endpoint() == "geneCal": return "/sequence/id/{}?content-type=text/plain".format(self.parameters().get("gene"))
-        elif self.endpoint() == "geneInfo":
+        # A set that achieve the valid possible endpoints
+        endpoints = {"/listSpecies", "/karyotype", "/chromosomeLength", "/geneSeq", "/geneInfo", "/geneCal", "/geneList"}
+        if self.data["endpoint"] in endpoints:
+            if self.data["endpoint"] == "/listSpecies": return {"type": "client", "value": "/info/species?content-type=application/json"}
+            elif self.data["endpoint"] == "/karyotype":
+                if mapper(self.data, "specie")[0]:
+                    return {"type": "client", "value":"/info/assembly/{}?content-type=application/json".format(self.data[mapper(self.data, "specie")[1]]["value"])}
+                else: return {"type": "error", "value": "The function kayotype requires an specie parameter."}
+            elif self.data["endpoint"] == "/chromosomeLength":
+                if mapper(self.data, "specie")[0] and mapper(self.data, "chromo")[0]:
+                    return {"type": "client", "value": "/info/assembly/{}?content-type=application/json".format(self.data[mapper(self.data, "specie")[1]]["value"])}
+                else: return {"type": "error", "value": "The function chromosome Length requires an specie and chromo parameter."}
+            elif self.data["endpoint"] == "/geneSeq" or self.data["endpoint"] == "/geneCal":
+                if mapper(self.data, "gene")[0]:
+                    return {"type": "client", "value": "/sequence/id/{}?content-type=text/plain".format(self.data[mapper(self.data, "specie")[1]]["gene"])}
+                else: return {"type": "client", "value": "This function requires a gene parameter."}
+            elif self.data["endpoint"] == "/geneInfo":
+                if mapper(self.data, "gene")[0]:
+                    return {"type": "client", "value": "/lookup/id/{}?content-type=application/json".format(self.data[mapper(self.data, "specie")[1]]["gene"])}
+                else: return {"type": "error", "value": "The function gene Info requires a gene parameter."}
+            elif self.data["endpoint"] == "/geneList":
+                if mapper(self.data, "gene")[0]:
 
 
+        else:
+            return {"type": "error", "value":"Sorry, we do not perform {} operation, please check that you have typed it correctly.".format(self.data["endpoint"][1:])}
 
+R = Request("/chromosomeLength?specie=mouse&chromo=18")
+print(R.data)
+print(R.isjson())
