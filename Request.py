@@ -2,7 +2,7 @@
 def mapper(dictionary, arg):
     value = [False, 0]
     for key in dictionary:
-        if key.starswith("parameter"):
+        if key.startswith("parameter"):
             if dictionary[key]["type"] == arg: value = [True, key]
     return value
 
@@ -70,11 +70,17 @@ class Request:
                 else: return {"type": "error", "value": "The function gene Info requires a gene parameter."}
             elif self.data["endpoint"] == "/geneList":
                 if mapper(self.data, "gene")[0]:
-
-
+                    return {"type": "client"}
+                else: return {"type": "error", "value": "The function gene List requires a gene parameter."}
         else:
-            return {"type": "error", "value":"Sorry, we do not perform {} operation, please check that you have typed it correctly.".format(self.data["endpoint"][1:])}
+            return {"type": "error", "value": "Sorry, we do not perform {} operation, please check that you have typed it correctly.".format(self.data["endpoint"][1:])}
+
+    # This function will give the server the endpoint when it is needed for managing the HTML/json that is needed as an output
+    def endpoint(self):
+        return self.data["endpoint"]
 
 R = Request("/chromosomeLength?specie=mouse&chromo=18")
 print(R.data)
 print(R.isjson())
+print(R.answer())
+print(R.endpoint())
