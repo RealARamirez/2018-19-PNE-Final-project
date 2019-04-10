@@ -10,7 +10,8 @@ opening = """
 # HTML part that defines the title
 def title(title):
     return """
-        <title>{}</title>""".format(title)
+    <title>{}</title>
+        """.format(title).rstrip("\n")
 
 
 # Part of the HTML that ends the head and begin the body
@@ -21,25 +22,24 @@ no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
-background-size: cover">"""
+background-size: cover">
+""".rstrip("\n")
 
 # Define how all html files will end
 closing = """
 </body>
-</html>"""
+</html>
+""".rstrip("\n")
 
 class HTMLFile:
-    def __init__(self):
-        return
-
-    def error(self):
+    def error(self, message):
         file = opening
         file += title("Error")
         file += medium
         file += """
-            <h1>Error page</h1>
-            <p>This page is not recognize, if you want to go back to the initial page:</p>
-            <a href="/">Click here.</a>
-        """
+    <h1>Error page</h1>
+    <p>This page is not recognize, if you want to go back to the initial page:</p>
+    <a href="/">Click here.</a>
+        """.rstrip("\n")
         file += closing
         return file
