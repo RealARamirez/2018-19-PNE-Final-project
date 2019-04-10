@@ -27,6 +27,7 @@ class Request:
         if self.value and self.request.split("?")[1] != "json=1":
             b = 1
             for elem in self.request.split("?")[1].split("&"):
+                if elem == "json=1": self.data["json"] = "yes"
                 if "=" in elem:
                     self.data["parameter"+str(b)] = {}
                     self.data["parameter" + str(b)]["type"] = elem.split("=")[0]
@@ -79,8 +80,21 @@ class Request:
     def endpoint(self):
         return self.data["endpoint"]
 
+    # This method will return a list of different parameters that could be needed for different HTML and Json
+    def parameters(self):
+        # The list will have at least an standard dictionary
+        List = [{"type": "none", "value": "none"}]
+        # Append the dictionaries to the list
+        for key in self.data:
+            if key.startswith("parameter"):
+                if self.data[key]["type"] != "none" and self.data[key]["value"] != "none":
+                    List.append(self.data[key])
+        return List
+
+
 R = Request("/chromosomeLength?specie=mouse&chromo=18")
 print(R.data)
 print(R.isjson())
 print(R.answer())
 print(R.endpoint())
+print(R.parameters())
