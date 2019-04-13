@@ -38,7 +38,10 @@ class Request:
         for key in self.data:
             if key.startswith("parameter"):
                 if self.data[key]["type"] == "gene":
-                    self.data[key]["value"] = Client("/xrefs/symbol/homo_sapiens/{}?content-type=application/json".format(self.data[key]["value"]))[0]["id"]
+                    try:
+                        self.data[key]["value"] = Client("/xrefs/symbol/homo_sapiens/{}?content-type=application/json".format(self.data[key]["value"]))[0]["id"]
+                    except (KeyError, IndexError):
+                        continue
         return
 
     # This method will assign the str value of the request to the object
