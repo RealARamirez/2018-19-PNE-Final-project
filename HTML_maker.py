@@ -119,3 +119,17 @@ class HTMLFile:
         file += closing
         return file
 
+    # The method that create the HTML file for the gene Seq
+    def geneSeq(self, data):
+        file = opening
+        file += title(geneSeq)
+        file += medium
+        file += """
+    <h1>Gene Seq page</h1>
+        """.rstrip("\n")
+        file += """
+    <p>The sequence of your human gene is : {}</p>
+        """.format(data).rstrip("\n")
+        file += closing
+        return file
+
