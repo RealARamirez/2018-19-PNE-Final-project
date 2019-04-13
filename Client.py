@@ -26,4 +26,8 @@ def Client(ENDPOINT):
     # Close the connection
     conn.close()
     # Return the text in json format
-    return json.loads(txt_json)
+    try:
+        txt_json = json.loads(txt_json)
+    except json.decoder.JSONDecodeError:
+        txt_json = txt_json
+    return txt_json
