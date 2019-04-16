@@ -1,5 +1,8 @@
 # Python program for designing the html files that would be used in this project
 
+# Import Seq to threat the sequences in Gene Cal
+from Seq import Seq
+
 # ListSpecies program
 # This method will create the HTML page for list Species
 def listSpecies(data, parameters):
@@ -77,10 +80,47 @@ def geneInfo(data):
 <p>Your gene ID is: {}</p><br>
 <p>Its start is {}, its end is {} and its length is {}.</p><br>
 <p>It belongs to {} chromosome.</p>
-    """.format(data["id"], data["start"], data["end"], int(data["end"])-(int(data["start"])-1), data["seq_region_name"])
+    """.format(data["id"], data["start"], data["end"], int(data["end"])-(int(data["start"])-1), data["seq_region_name"]).rstrip("\n")
     return file
 
 # It will create the HTML part for gene Calc
+def geneCalc(data):
+    # Threat the data as a sequence
+    S = Seq(data)
+    file = """
+<p>It has a length of {}. The percentages of the bases are the following:</p>
+<p style='padding-left: 3em'>Base A: {}%</p><br>
+<p style='padding-left: 3em'>Base C: {}%</p><br>
+<p style='padding-left: 3em'>Base T: {}%</p><br>
+<p style='padding-left: 3em'>Base G: {}%</p>
+    """.format(S.len(), S.perc("A"), S.perc("C"), S.perc("T"), S.perc("G")).rstrip("\n")
+    return file
+
+# It will create the appendix for the HTML file of Gene List
+def geneList(data):
+    file = ""
+    if len(data) > 0:
+        for elem in data:
+            file += """
+<p>Gene {} which assembly name is : {}.</p>
+            """.format(elem["gene_id"], elem["assembly_name"]).rstrip("\n")
+    else:
+        file += """
+<p>There are not genes in this part of the chromosome.</p>
+        """.rstrip("\n")
+    return file
+
+# Function that will return the correct appendix for the HTML file
+def chooser(endpoint, message, data, parameters):
+    if endpoint == "listSpecies": return listSpecies(data, parameters)
+    elif endpoint == "karyotype": return karyotype(data)
+    elif endpoint == "chromosomeLength": return chromosomeLength(data, parameters)
+    elif endpoint == "error": return error(message)
+    elif endpoint == "geneSeq": return geneSeq(data)
+    elif endpoint == "geneInfo": return geneInfo(data)
+    elif endpoint == "geneCalc": return geneCalc(data)
+    elif endpoint == "geneList": return geneList(data)
+    else: return error("Sorry, we do not perform that operation, please check that you have typed it correctly.")
 
 # Method that will be used to create each HTML file
 def HTMLFile(endpoint, message, data, parameters):
@@ -108,6 +148,8 @@ ixed;
 background-size: cover">
     """.rstrip("\n")
     File += medium
+    # Now the appendix that variates on the endpoint is given by chooser that will select the function needed
+    File += chooser(endpoint, message, data, parameters)
     # Define how all html files will end
     closing = """
 </body>
@@ -116,6 +158,10 @@ background-size: cover">
     File += """
     <h1 style="color:brown">{} page</h1>
     """.format(endpoint).rstrip("\n")
+    # Add the end to the file
+    File += closing
+    # Return the file for the server
+    return File
 
 
 
