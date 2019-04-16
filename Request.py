@@ -82,7 +82,7 @@ class Request:
                     return {"type": "client", "value": "This function requires a gene parameter."}
             elif self.data["endpoint"] == "/geneInfo":
                 if mapper(self.data, "gene")[0]:
-                    return {"type": "client", "value": "/sequence/id/{}?content-type=text/plain".format(self.data[mapper(self.data, "gene")[1]]["value"])}
+                    return {"type": "client", "value": "/lookup/id/{}?content-type=application/json".format(self.data[mapper(self.data, "gene")[1]]["value"])}
                 else:
                     return {"type": "error", "value": "The function gene Info requires a gene parameter."}
             elif self.data["endpoint"] == "/geneList":

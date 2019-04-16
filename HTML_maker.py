@@ -71,6 +71,17 @@ def geneSeq(data):
     """.format(data).rstrip("\n")
     return file
 
+# The method create an HTML file part for geneInfo
+def geneInfo(data):
+    file = """
+<p>Your gene ID is: {}</p><br>
+<p>Its start is {}, its end is {} and its length is {}.</p><br>
+<p>It belongs to {} chromosome.</p>
+    """.format(data["id"], data["start"], data["end"], int(data["end"])-(int(data["start"])-1), data["seq_region_name"])
+    return file
+
+# It will create the HTML part for gene Calc
+
 # Method that will be used to create each HTML file
 def HTMLFile(endpoint, message, data, parameters):
     # Define how all html files will start
