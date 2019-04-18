@@ -32,10 +32,13 @@ def Client(ENDPOINT):
         txt_json = txt_json
     return txt_json
 
+# It will return true if the data base return us an error
 def valid(data):
     try:
-        msg = data["error"]
-        msg += "If the ID does not correspond to the gene it should be, make sure that you have typed it correctly. If you have typed it correctly, we donot have that symbol on the database."
+        msg = "Error that comes from the data base that is the following: "
+        msg += data["error"]
+        msg += " If the ID does not correspond to the gene it should be, make sure that you have typed it correctly." \
+               " If you have typed it correctly, we do not have that symbol on the database."
         value = [True, msg]
     except (KeyError, TypeError):
         value = [False]
