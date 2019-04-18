@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Genome</title>
+</head>
+<body style="background-image: url('background_image.jpg');
+no-repeat center center f
+ixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover">
+<h1 style="color:brown">GENOME</h1>
+<p>All the operation you can perform on this page:</p>
+<table style="background-color:DodgerBlue; color:LightGray">
+    <tr>
+        <th>
+            <form action="listSpecies" method="get">
+                <h1>List species: </h1> <br>
+                Limit (Optional): <input type="text" name="limit"> <br><br><br>
+                Click here if you want lo return a JSON: <input type="checkbox" name="json" value="1"> <br><br><br>
+                <input type="submit" name="subm" value="GO!">
+        </th>
+        <th>
+            <form action="karyotype" method="get">
+                <h1>Karyotype: </h1> <br>
+                Specie (Mandatory): <input type="text" name="specie"> <br><br><br>
+                Click here if you want lo return a JSON: <input type="checkbox" name="json" value="1"> <br><br><br>
+                <input type="submit" name="subm" value="GO!">
+        </th>
+        <th>
+            <form action="chromosomeLength" method="get">
+                <h1>Chromosome length: </h1> <br>
+                Specie (Mandatory): <input type="text" name="specie"> <br>
+                Chromosome (Mandatory): <input type="text" name="chromo"> <br><br>
+                Click here if you want lo return a JSON: <input type="checkbox" name="json" value="1"> <br><br>
+                <input type="submit" name="subm" value="GO!">
+        </th>
+    </tr>
+</table>
+</body>
+</html>
