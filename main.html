@@ -13,7 +13,7 @@ ixed;
 background-size: cover">
 <h1 style="color:brown">GENOME</h1>
 <p>All the operation you can perform on this page:</p>
-<table style="color:LightGray">
+<table style="background-color:DodgerBlue; opacity: 0.8; color:LightGray">
     <tr>
         <th>
             <form action="listSpecies" method="get">
@@ -21,6 +21,7 @@ background-size: cover">
                 Limit (Optional): <input type="text" name="limit"> <br><br><br>
                 Click here if you want lo return a JSON: <input type="checkbox" name="json" value="1"> <br><br><br><br>
                 <input type="submit" name="subm" value="GO!">
+            </form>
         </th>
         <th>
             <form action="karyotype" method="get">
@@ -28,6 +29,7 @@ background-size: cover">
                 Specie (Mandatory): <input type="text" name="specie"> <br><br><br>
                 Click here if you want lo return a JSON: <input type="checkbox" name="json" value="1"> <br><br><br><br>
                 <input type="submit" name="subm" value="GO!">
+            </form>
         </th>
         <th>
             <form action="chromosomeLength" method="get">
@@ -36,6 +38,7 @@ background-size: cover">
                 Chromosome (Mandatory): <input type="text" name="chromo"> <br><br>
                 Click here if you want lo return a JSON: <input type="checkbox" name="json" value="1"> <br><br>
                 <input type="submit" name="subm" value="GO!">
+            </form>
         </th>
     </tr>
 </table>
