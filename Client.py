@@ -31,3 +31,12 @@ def Client(ENDPOINT):
     except json.decoder.JSONDecodeError:
         txt_json = txt_json
     return txt_json
+
+def valid(data):
+    try:
+        msg = data["error"]
+        msg += "If the ID does not correspond to the gene it should be, make sure that you have typed it correctly. If you have typed it correctly, we donot have that symbol on the database."
+        value = [True, msg]
+    except (KeyError, TypeError):
+        value = [False]
+    return value
