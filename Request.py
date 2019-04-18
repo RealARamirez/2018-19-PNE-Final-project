@@ -30,10 +30,14 @@ class Request:
             for elem in self.request.split("?")[1].split("&"):
                 if elem == "json=1": self.data["json"] = "yes"
                 if "=" in elem:
-                    self.data["parameter" + str(b)] = {}
-                    self.data["parameter" + str(b)]["type"] = elem.split("=")[0]
-                    self.data["parameter" + str(b)]["value"] = elem.split("=")[1]
-                    b += 1
+                    # Check that it is not an empty value
+                    if elem.endswith("="):
+                        continue
+                    else:
+                        self.data["parameter" + str(b)] = {}
+                        self.data["parameter" + str(b)]["type"] = elem.split("=")[0]
+                        self.data["parameter" + str(b)]["value"] = elem.split("=")[1]
+                        b += 1
         # Will reassign the parameter gene to its ID
         for key in self.data:
             if key.startswith("parameter"):
