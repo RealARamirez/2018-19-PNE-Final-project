@@ -62,8 +62,7 @@ def chromosomeLength(data, parameters):
 # Gives the error message
 def error(message):
     file = """
-    <p>{}, if you want to go back to the initial page:</p>
-    <a href="/">Click here.</a>
+    <p>{}</p>
     """.format(message).rstrip("\n")
     return file
 
@@ -158,6 +157,9 @@ background-size: cover">
     File += """
     <h1 style="color:brown">{} page</h1>
     """.format(endpoint).rstrip("\n")
+    # Add an option to go back to the initial page
+    File += '<p>If you want to go back to the initial page: </p>'
+    File += '<a href="/">Click here.</a>'
     # Add the end to the file
     File += closing
     # Return the file for the server
