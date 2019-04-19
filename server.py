@@ -27,6 +27,16 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
         elif self.path == "/background_image.jpg":
             image = open("background_image.jpg", "rb")
             content = image.read()
+            image.close()
+            self.send_response(200)
+            self.send_header('Content-Type', 'image/jpeg')
+            self.send_header('Content-Length', len(content))
+            self.end_headers()
+            self.wfile.write(content)
+        elif self.path == "/favicon.ico":
+            favicon = open("favicon.ico", "rb")
+            content = favicon.read()
+            favicon.close()
             self.send_response(200)
             self.send_header('Content-Type', 'image/jpeg')
             self.send_header('Content-Length', len(content))
