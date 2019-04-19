@@ -111,4 +111,6 @@ def chooser(endpoint, message, data, parameters):
 
 # Function that will create the json file
 def JSONFile(endpoint, message, data, parameters):
-    return json.dumps(chooser(endpoint, message, data, parameters))
+    Dictionary = chooser(endpoint, message, data, parameters)
+    Dictionary["main_page"] = "http://localhost:8000/"
+    return json.dumps(Dictionary)

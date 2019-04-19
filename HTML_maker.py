@@ -34,7 +34,8 @@ def karyotype(data):
     Message = "The karyotype is compassed by the following elements: "
     for elem in data["karyotype"]:
         if elem == "MT": continue
-        else: Message += elem
+        else: Message += elem + ", "
+    Message = Message.rstrip(", ")
     file = """
 <p>{}.</p>
     """.format(Message)
@@ -141,8 +142,8 @@ def HTMLFile(endpoint, message, data, parameters):
     medium = """
 </head>
 <body style="background-image: url('background_image.jpg');
-no-repeat center center f
-ixed;
+no-repeat center center fixed;
+background-attachment: fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
