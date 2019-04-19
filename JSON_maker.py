@@ -22,7 +22,7 @@ def listSpecies(data, parameters):
                 top = len(data["species"])
                 dictionary["detected_error"] = "Your limit is not a number, all species will be listed."
     for b in range(top):
-        dictionary["Specie_"+str(b+1)] = "Specie {} most common known as {}.\n".format(data[b]["name"],data[b]["common_name"])
+        dictionary["Specie_"+str(b+1)] = "Specie {} most common known as {}.\n".format(data["species"][b]["name"],data["species"][b]["common_name"])
     return dictionary
 
 # It will create karyotype dictionary

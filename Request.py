@@ -112,10 +112,3 @@ class Request:
                     List.append(self.data[key])
         return List
 
-
-R = Request("/geneCalc?gene=FRAT1")
-print(R.data)
-print(R.isjson())
-print(R.answer())
-print(R.endpoint())
-print(R.parameters())

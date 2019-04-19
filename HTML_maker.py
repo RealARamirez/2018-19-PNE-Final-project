@@ -24,7 +24,9 @@ def listSpecies(data, parameters):
 <p>Your limit is not a number, all species will be listed.</p>
                 """.rstrip("\n")
     for b in range(top):
-        file += "Specie number {} is {} most common known as {}.\n".format((b + 1), data[b]["name"],data[b]["common_name"])
+        file += """
+<p>Specie number {} is {} most common known as {}.</p>
+        """.format((b + 1), data["species"][b]["name"], data["species"][b]["common_name"])
     return file
 
 # This method will create an HTML answer for the karyotype
@@ -147,8 +149,6 @@ ixed;
 background-size: cover">
     """.rstrip("\n")
     File += medium
-    # Now the appendix that variates on the endpoint is given by chooser that will select the function needed
-    File += chooser(endpoint, message, data, parameters)
     # Define how all html files will end
     closing = """
 </body>
@@ -157,6 +157,8 @@ background-size: cover">
     File += """
     <h1 style="color:brown">{} page</h1>
     """.format(endpoint).rstrip("\n")
+    # Now the appendix that variates on the endpoint is given by chooser that will select the function needed
+    File += chooser(endpoint, message, data, parameters)
     # Add an option to go back to the initial page
     File += '<p>If you want to go back to the initial page: </p>'
     File += '<a href="/">Click here.</a>'
