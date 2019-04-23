@@ -95,3 +95,24 @@ This function requires a gene parameter.
 If you want to go back to the initial page:
 Click here.
 
+Endpoint (Tested directly): "/geneCalc?gene=FRAT"
+Endpoint (Tested through the main page): "/geneCalc?gene=FRAT&subm=GO!"
+Endpoint that shows the output when a wrong symbol is introduced.
+Response from the server:
+error page
+Error that comes from the data base that is the following: ID 'FRAT' not found. If the ID does not correspond to the gene it should be, make sure that you have typed it correctly. If you have typed it correctly, we do not have that symbol on the database.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/geneCalc?gene=ENSG00000165879"
+Endpoint (Tested through the main page): "/geneCalc?gene=ENSG00000165879&subm=GO!"
+Due to the way the program works it allows to introduce directly the ID without returning an error.
+Response from the server:
+geneCalc page
+It has a length of 2649. The percentages of the bases are the following:
+Base A: 18.0%
+Base C: 30.2%
+Base T: 19.7%
+Base G: 32.0%
+If you want to go back to the initial page:
+Click here.
