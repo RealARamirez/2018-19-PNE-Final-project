@@ -3,7 +3,6 @@
 # http.client, socket and Json are needed to import
 import http.client
 import json
-import socket
 
 # API Information
 # The HOSTNAME will always be the IP where it has been executed
