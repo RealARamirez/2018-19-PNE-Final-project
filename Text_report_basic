@@ -1,0 +1,753 @@
+Document for showing that the endpoints of the basic level of the practice works:
+
+Endpoint: "/" (Main page)
+Response from the server:
+GENOME
+All the operation you can perform on this page:
+List species:
+Limit (Optional):
+Click here if you want lo return a JSON:
+Karyotype:
+Specie (Mandatory):
+Click here if you want lo return a JSON:
+Chromosome length:
+Specie (Mandatory):
+Chromo (Mandatory):
+Click here if you want lo return a JSON:
+geneSeq:
+Gene (Mandatory):
+Click here if you want lo return a JSON:
+geneInfo:
+Gene (Mandatory):
+Click here if you want lo return a JSON:
+geneCalc:
+Gene (Mandatory):
+Click here if you want lo return a JSON:
+geneList:
+Chromo (Mandatory):
+Start (Mandatory):
+End (Mandatory):
+Click here if you want lo return a JSON:
+
+Endpoint (Tested directly): "/listSpecies"
+Endpoint (Tested through the main page): "/listSpecies?limit=&subm=GO!"
+Response from the server:
+listSpecies page
+Specie number 1 is danio_rerio most common known as zebrafish.
+Specie number 2 is cricetulus_griseus_picr most common known as Chinese hamster.
+Specie number 3 is gasterosteus_aculeatus most common known as three-spined stickleback.
+Specie number 4 is takifugu_rubripes most common known as torafugu.
+Specie number 5 is cercocebus_atys most common known as Sooty mangabey.
+Specie number 6 is pygocentrus_nattereri most common known as red-bellied piranha.
+Specie number 7 is myotis_lucifugus most common known as little brown bat.
+Specie number 8 is seriola_lalandi_dorsalis most common known as yellowtail amberjack.
+Specie number 9 is ochotona_princeps most common known as American pika.
+Specie number 10 is mus_musculus_cbaj most common known as house mouse.
+Specie number 11 is cricetulus_griseus_chok1gshd most common known as Chinese hamster.
+Specie number 12 is xiphophorus_couchianus most common known as Monterrey platyfish.
+Specie number 13 is panthera_tigris_altaica most common known as Tiger.
+Specie number 14 is dipodomys_ordii most common known as Ord's kangaroo rat.
+Specie number 15 is junco_hyemalis most common known as dark-eyed junco.
+Specie number 16 is callithrix_jacchus most common known as white-tufted-ear marmoset.
+Specie number 17 is macaca_nemestrina most common known as Pig-tailed macaque.
+Specie number 18 is monopterus_albus most common known as swamp eel.
+Specie number 19 is fundulus_heteroclitus most common known as mummichog.
+Specie number 20 is mus_pahari most common known as Shrew mouse.
+Specie number 21 is ailuropoda_melanoleuca most common known as giant panda.
+Specie number 22 is tetraodon_nigroviridis most common known as spotted green pufferfish.
+Specie number 23 is gambusia_affinis most common known as western mosquitofish.
+Specie number 24 is pan_paniscus most common known as bonobo.
+Specie number 25 is astatotilapia_calliptera most common known as eastern happy.
+Specie number 26 is numida_meleagris most common known as helmeted guineafowl.
+Specie number 27 is mus_musculus_wsbeij most common known as western european house mouse.
+Specie number 28 is lepisosteus_oculatus most common known as Spotted gar.
+Specie number 29 is calidris_pygmaea most common known as Spoon-billed sandpiper.
+Specie number 30 is cyanistes_caeruleus most common known as blue tit.
+Specie number 31 is bos_mutus most common known as wild yak.
+Specie number 32 is apteryx_haastii most common known as Great spotted kiwi.
+Specie number 33 is cyprinodon_variegatus most common known as sheepshead minnow.
+Specie number 34 is castor_canadensis most common known as American beaver.
+Specie number 35 is lepidothrix_coronata most common known as blue-crowned manakin.
+Specie number 36 is pongo_abelii most common known as Bornean orangutan.
+Specie number 37 is mandrillus_leucophaeus most common known as Drill.
+Specie number 38 is caenorhabditis_elegans most common known as C.elegans.
+Specie number 39 is scophthalmus_maximus most common known as turbot.
+Specie number 40 is oreochromis_niloticus most common known as Nile tilapia.
+Specie number 41 is taeniopygia_guttata most common known as zebra finch.
+Specie number 42 is pelodiscus_sinensis most common known as Chinese softshell turtle.
+Specie number 43 is cavia_porcellus most common known as domestic guinea pig.
+Specie number 44 is sus_scrofa most common known as pig.
+Specie number 45 is lonchura_striata_domestica most common known as Bengalese finch.
+Specie number 46 is maylandia_zebra most common known as zebra mbuna.
+Specie number 47 is ornithorhynchus_anatinus most common known as platypus.
+Specie number 48 is chelonoidis_abingdonii most common known as Abingdon island giant tortoise.
+Specie number 49 is saimiri_boliviensis_boliviensis most common known as Bolivian squirrel monkey.
+Specie number 50 is coturnix_japonica most common known as Japanese quail.
+Specie number 51 is nomascus_leucogenys most common known as Northern white-cheeked gibbon.
+Specie number 52 is notamacropus_eugenii most common known as tammar wallaby.
+Specie number 53 is prolemur_simus most common known as greater bamboo lemur.
+Specie number 54 is latimeria_chalumnae most common known as coelacanth.
+Specie number 55 is ictidomys_tridecemlineatus most common known as thirteen-lined ground squirrel.
+Specie number 56 is mus_musculus_pwkphj most common known as eastern european house mouse.
+Specie number 57 is tupaia_belangeri most common known as northern tree shrew.
+Specie number 58 is acanthochromis_polyacanthus most common known as spiny chromis.
+Specie number 59 is tursiops_truncatus most common known as bottlenosed dolphin.
+Specie number 60 is mesocricetus_auratus most common known as Golden Hamster.
+Specie number 61 is heterocephalus_glaber_female most common known as naked mole-rat.
+Specie number 62 is nannospalax_galili most common known as Upper Galilee mountains blind mole rat.
+Specie number 63 is dasypus_novemcinctus most common known as nine-banded armadillo.
+Specie number 64 is anser_brachyrhynchus most common known as pink-footed goose.
+Specie number 65 is oryctolagus_cuniculus most common known as rabbit.
+Specie number 66 is anabas_testudineus most common known as climbing perch.
+Specie number 67 is mus_musculus_c3hhej most common known as house mouse.
+Specie number 68 is stegastes_partitus most common known as bicolor damselfish.
+Specie number 69 is meriones_unguiculatus most common known as Mongolian gerbil.
+Specie number 70 is mastacembelus_armatus most common known as zig-zag eel.
+Specie number 71 is choloepus_hoffmanni most common known as Hoffmann's two-fingered sloth.
+Specie number 72 is paramormyrops_kingsleyae most common known as Paramormyrops kingsleyae.
+Specie number 73 is melopsittacus_undulatus most common known as Budgie.
+Specie number 74 is amphiprion_ocellaris most common known as clown anemonefish.
+Specie number 75 is nothoprocta_perdicaria most common known as birds.
+Specie number 76 is urocitellus_parryii most common known as Arctic ground squirrel.
+Specie number 77 is vulpes_vulpes most common known as red fox.
+Specie number 78 is mus_musculus_lpj most common known as house mouse.
+Specie number 79 is mus_musculus_fvbnj most common known as house mouse.
+Specie number 80 is spermophilus_dauricus most common known as Daurian ground squirrel.
+Specie number 81 is mus_musculus_c57bl6nj most common known as house mouse.
+Specie number 82 is serinus_canaria most common known as common canary.
+Specie number 83 is poecilia_formosa most common known as Amazon molly.
+Specie number 84 is equus_asinus_asinus most common known as donkey.
+Specie number 85 is pundamilia_nyererei most common known as Makobe Island cichlid.
+Specie number 86 is peromyscus_maniculatus_bairdii most common known as Northern American deer mouse.
+Specie number 87 is jaculus_jaculus most common known as Lesser Egyptian jerboa.
+Specie number 88 is ciona_savignyi most common known as Sea squirt Ciona savignyi.
+Specie number 89 is xenopus_tropicalis most common known as western clawed frog.
+Specie number 90 is mus_caroli most common known as Ryukyu mouse.
+Specie number 91 is otolemur_garnettii most common known as small-eared galago.
+Specie number 92 is pteropus_vampyrus most common known as large flying fox.
+Specie number 93 is panthera_pardus most common known as leopard.
+Specie number 94 is ursus_maritimus most common known as Polar bear.
+Specie number 95 is gopherus_agassizii most common known as Agassiz's desert tortoise.
+Specie number 96 is meleagris_gallopavo most common known as domestic turkey.
+Specie number 97 is calidris_pugnax most common known as ruff.
+Specie number 98 is mus_spretus most common known as algerian mouse.
+Specie number 99 is phascolarctos_cinereus most common known as koala.
+Specie number 100 is marmota_marmota_marmota most common known as Alpine marmot.
+Specie number 101 is mus_musculus_129s1svimj most common known as house mouse.
+Specie number 102 is gallus_gallus most common known as chicken.
+Specie number 103 is ovis_aries most common known as Domestic sheep.
+Specie number 104 is gorilla_gorilla most common known as Western Lowland Gorilla.
+Specie number 105 is esox_lucius most common known as northern pike.
+Specie number 106 is ictalurus_punctatus most common known as channel catfish.
+Specie number 107 is microtus_ochrogaster most common known as vole.
+Specie number 108 is capra_hircus most common known as Goat.
+Specie number 109 is labrus_bergylta most common known as ballan wrasse.
+Specie number 110 is vicugna_pacos most common known as alpaca.
+Specie number 111 is anas_platyrhynchos_platyrhynchos most common known as common mallard.
+Specie number 112 is octodon_degus most common known as Degu.
+Specie number 113 is aotus_nancymaae most common known as Ma's night monkey.
+Specie number 114 is chinchilla_lanigera most common known as Long-tailed chinchilla.
+Specie number 115 is canis_lupus_dingo most common known as dingo.
+Specie number 116 is echinops_telfairi most common known as small Madagascar hedgehog.
+Specie number 117 is procavia_capensis most common known as cape rock hyrax.
+Specie number 118 is bison_bison_bison most common known as American bison.
+Specie number 119 is erinaceus_europaeus most common known as western European hedgehog.
+Specie number 120 is hippocampus_comes most common known as tiger tail seahorse.
+Specie number 121 is neovison_vison most common known as American mink.
+Specie number 122 is sphenodon_punctatus most common known as tuatara.
+Specie number 123 is periophthalmus_magnuspinnatus most common known as Periophthalmus magnuspinnatus.
+Specie number 124 is mus_musculus_casteij most common known as south eastern house mouse.
+Specie number 125 is scleropages_formosus most common known as Asian bonytongue.
+Specie number 126 is notechis_scutatus most common known as mainland tiger snake.
+Specie number 127 is eptatretus_burgeri most common known as Inshore hagfish.
+Specie number 128 is macaca_fascicularis most common known as Crab-eating macaque.
+Specie number 129 is pogona_vitticeps most common known as central bearded dragon.
+Specie number 130 is cebus_capucinus most common known as White-headed capuchin.
+Specie number 131 is dromaius_novaehollandiae most common known as emu.
+Specie number 132 is mus_musculus_balbcj most common known as house mouse.
+Specie number 133 is petromyzon_marinus most common known as sea lamprey.
+Specie number 134 is papio_anubis most common known as Olive baboon.
+Specie number 135 is macaca_mulatta most common known as rhesus monkey.
+Specie number 136 is loxodonta_africana most common known as African savanna elephant.
+Specie number 137 is bos_taurus most common known as cattle.
+Specie number 138 is kryptolebias_marmoratus most common known as mangrove rivulus.
+Specie number 139 is oryzias_latipes most common known as Japanese medaka HdrR.
+Specie number 140 is poecilia_reticulata most common known as guppy.
+Specie number 141 is salvator_merianae most common known as Argentine black and white tegu.
+Specie number 142 is amphilophus_citrinellus most common known as Midas cichlid.
+Specie number 143 is mus_musculus_dba2j most common known as house mouse.
+Specie number 144 is chrysemys_picta_bellii most common known as Western painted turtle.
+Specie number 145 is drosophila_melanogaster most common known as fruit fly.
+Specie number 146 is rhinopithecus_roxellana most common known as Golden snub-nosed monkey.
+Specie number 147 is ficedula_albicollis most common known as Collared flycatcher.
+Specie number 148 is colobus_angolensis_palliatus most common known as Angola colobus.
+Specie number 149 is seriola_dumerili most common known as greater amberjack.
+Specie number 150 is canis_familiaris most common known as dog.
+Specie number 151 is poecilia_mexicana most common known as shortfin molly.
+Specie number 152 is cavia_aperea most common known as Brazilian guinea pig.
+Specie number 153 is zonotrichia_albicollis most common known as white-throated sparrow.
+Specie number 154 is mus_spicilegus most common known as steppe mouse.
+Specie number 155 is mus_musculus_nzohlltj most common known as house mouse.
+Specie number 156 is sorex_araneus most common known as European shrew.
+Specie number 157 is oryzias_latipes_hni most common known as Japanese medaka HNI.
+Specie number 158 is propithecus_coquereli most common known as Coquerel's sifaka.
+Specie number 159 is cricetulus_griseus_crigri most common known as Chinese hamster.
+Specie number 160 is manacus_vitellinus most common known as golden-collared manakin.
+Specie number 161 is theropithecus_gelada most common known as gelada.
+Specie number 162 is mustela_putorius_furo most common known as Domestic ferret.
+Specie number 163 is xiphophorus_maculatus most common known as southern platyfish.
+Specie number 164 is monodelphis_domestica most common known as gray short-tailed opossum.
+Specie number 165 is piliocolobus_tephrosceles most common known as Ugandan red Colobus.
+Specie number 166 is cynoglossus_semilaevis most common known as tongue sole.
+Specie number 167 is apteryx_owenii most common known as little spotted kiwi.
+Specie number 168 is fukomys_damarensis most common known as Damara mole rat.
+Specie number 169 is crocodylus_porosus most common known as Australian saltwater crocodile.
+Specie number 170 is amphiprion_percula most common known as orange clownfish.
+Specie number 171 is haplochromis_burtoni most common known as Burton's mouthbrooder.
+Specie number 172 is microcebus_murinus most common known as gray mouse lemur.
+Specie number 173 is ciona_intestinalis most common known as Sea squirt Ciona intestinalis.
+Specie number 174 is saccharomyces_cerevisiae most common known as baker's yeast.
+Specie number 175 is equus_caballus most common known as horse.
+Specie number 176 is oryzias_melastigma most common known as Indian medaka.
+Specie number 177 is sarcophilus_harrisii most common known as Tasmanian devil.
+Specie number 178 is anolis_carolinensis most common known as green anole.
+Specie number 179 is rhinopithecus_bieti most common known as Black snub-nosed monkey.
+Specie number 180 is gadus_morhua most common known as Atlantic cod.
+Specie number 181 is chlorocebus_sabaeus most common known as African green monkey.
+Specie number 182 is mola_mola most common known as ocean sunfish.
+Specie number 183 is homo_sapiens most common known as human.
+Specie number 184 is poecilia_latipinna most common known as sailfin molly.
+Specie number 185 is mus_musculus_aj most common known as house mouse.
+Specie number 186 is parus_major most common known as Great Tit.
+Specie number 187 is mus_musculus most common known as house mouse.
+Specie number 188 is astyanax_mexicanus most common known as Mexican tetra.
+Specie number 189 is oryzias_latipes_hsok most common known as Japanese medaka HSOK.
+Specie number 190 is mus_musculus_akrj most common known as house mouse.
+Specie number 191 is rattus_norvegicus most common known as Norway rat.
+Specie number 192 is apteryx_rowi most common known as Okarito brown kiwi.
+Specie number 193 is heterocephalus_glaber_male most common known as naked mole-rat.
+Specie number 194 is mus_musculus_nodshiltj most common known as house mouse.
+Specie number 195 is carlito_syrichta most common known as Philippine tarsier.
+Specie number 196 is pan_troglodytes most common known as chimpanzee.
+Specie number 197 is neolamprologus_brichardi most common known as lyretail cichlid.
+Specie number 198 is felis_catus most common known as domestic cat.
+Specie number 199 is ursus_americanus most common known as American black bear.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/listSpecies?limit=10"
+Endpoint (Tested through the main page): "/listSpecies?limit=10&subm=GO!"
+Prove the limit
+Response from the server:
+listSpecies page
+Specie number 1 is parus_major most common known as Great Tit.
+Specie number 2 is poecilia_reticulata most common known as guppy.
+Specie number 3 is anabas_testudineus most common known as climbing perch.
+Specie number 4 is spermophilus_dauricus most common known as Daurian ground squirrel.
+Specie number 5 is zonotrichia_albicollis most common known as white-throated sparrow.
+Specie number 6 is felis_catus most common known as domestic cat.
+Specie number 7 is kryptolebias_marmoratus most common known as mangrove rivulus.
+Specie number 8 is microtus_ochrogaster most common known as vole.
+Specie number 9 is phascolarctos_cinereus most common known as koala.
+Specie number 10 is saimiri_boliviensis_boliviensis most common known as Bolivian squirrel monkey.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/listSpecies?limit=10"
+Endpoint (Tested through the main page): "/listSpecies?limit=10&subm=GO!"
+Use a limit higher than the number of species.
+Response from the server:
+listSpecies page
+Your limit is higher than the number of species, so all the species will be listed
+Specie number 1 is danio_rerio most common known as zebrafish.
+Specie number 2 is cricetulus_griseus_picr most common known as Chinese hamster.
+Specie number 3 is gasterosteus_aculeatus most common known as three-spined stickleback.
+Specie number 4 is takifugu_rubripes most common known as torafugu.
+Specie number 5 is cercocebus_atys most common known as Sooty mangabey.
+Specie number 6 is pygocentrus_nattereri most common known as red-bellied piranha.
+Specie number 7 is myotis_lucifugus most common known as little brown bat.
+Specie number 8 is seriola_lalandi_dorsalis most common known as yellowtail amberjack.
+Specie number 9 is ochotona_princeps most common known as American pika.
+Specie number 10 is mus_musculus_cbaj most common known as house mouse.
+Specie number 11 is cricetulus_griseus_chok1gshd most common known as Chinese hamster.
+Specie number 12 is xiphophorus_couchianus most common known as Monterrey platyfish.
+Specie number 13 is panthera_tigris_altaica most common known as Tiger.
+Specie number 14 is dipodomys_ordii most common known as Ord's kangaroo rat.
+Specie number 15 is junco_hyemalis most common known as dark-eyed junco.
+Specie number 16 is callithrix_jacchus most common known as white-tufted-ear marmoset.
+Specie number 17 is macaca_nemestrina most common known as Pig-tailed macaque.
+Specie number 18 is monopterus_albus most common known as swamp eel.
+Specie number 19 is fundulus_heteroclitus most common known as mummichog.
+Specie number 20 is mus_pahari most common known as Shrew mouse.
+Specie number 21 is ailuropoda_melanoleuca most common known as giant panda.
+Specie number 22 is tetraodon_nigroviridis most common known as spotted green pufferfish.
+Specie number 23 is gambusia_affinis most common known as western mosquitofish.
+Specie number 24 is pan_paniscus most common known as bonobo.
+Specie number 25 is astatotilapia_calliptera most common known as eastern happy.
+Specie number 26 is numida_meleagris most common known as helmeted guineafowl.
+Specie number 27 is mus_musculus_wsbeij most common known as western european house mouse.
+Specie number 28 is lepisosteus_oculatus most common known as Spotted gar.
+Specie number 29 is calidris_pygmaea most common known as Spoon-billed sandpiper.
+Specie number 30 is cyanistes_caeruleus most common known as blue tit.
+Specie number 31 is bos_mutus most common known as wild yak.
+Specie number 32 is apteryx_haastii most common known as Great spotted kiwi.
+Specie number 33 is cyprinodon_variegatus most common known as sheepshead minnow.
+Specie number 34 is castor_canadensis most common known as American beaver.
+Specie number 35 is lepidothrix_coronata most common known as blue-crowned manakin.
+Specie number 36 is pongo_abelii most common known as Bornean orangutan.
+Specie number 37 is mandrillus_leucophaeus most common known as Drill.
+Specie number 38 is caenorhabditis_elegans most common known as C.elegans.
+Specie number 39 is scophthalmus_maximus most common known as turbot.
+Specie number 40 is oreochromis_niloticus most common known as Nile tilapia.
+Specie number 41 is taeniopygia_guttata most common known as zebra finch.
+Specie number 42 is pelodiscus_sinensis most common known as Chinese softshell turtle.
+Specie number 43 is cavia_porcellus most common known as domestic guinea pig.
+Specie number 44 is sus_scrofa most common known as pig.
+Specie number 45 is lonchura_striata_domestica most common known as Bengalese finch.
+Specie number 46 is maylandia_zebra most common known as zebra mbuna.
+Specie number 47 is ornithorhynchus_anatinus most common known as platypus.
+Specie number 48 is chelonoidis_abingdonii most common known as Abingdon island giant tortoise.
+Specie number 49 is saimiri_boliviensis_boliviensis most common known as Bolivian squirrel monkey.
+Specie number 50 is coturnix_japonica most common known as Japanese quail.
+Specie number 51 is nomascus_leucogenys most common known as Northern white-cheeked gibbon.
+Specie number 52 is notamacropus_eugenii most common known as tammar wallaby.
+Specie number 53 is prolemur_simus most common known as greater bamboo lemur.
+Specie number 54 is latimeria_chalumnae most common known as coelacanth.
+Specie number 55 is ictidomys_tridecemlineatus most common known as thirteen-lined ground squirrel.
+Specie number 56 is mus_musculus_pwkphj most common known as eastern european house mouse.
+Specie number 57 is tupaia_belangeri most common known as northern tree shrew.
+Specie number 58 is acanthochromis_polyacanthus most common known as spiny chromis.
+Specie number 59 is tursiops_truncatus most common known as bottlenosed dolphin.
+Specie number 60 is mesocricetus_auratus most common known as Golden Hamster.
+Specie number 61 is heterocephalus_glaber_female most common known as naked mole-rat.
+Specie number 62 is nannospalax_galili most common known as Upper Galilee mountains blind mole rat.
+Specie number 63 is dasypus_novemcinctus most common known as nine-banded armadillo.
+Specie number 64 is anser_brachyrhynchus most common known as pink-footed goose.
+Specie number 65 is oryctolagus_cuniculus most common known as rabbit.
+Specie number 66 is anabas_testudineus most common known as climbing perch.
+Specie number 67 is mus_musculus_c3hhej most common known as house mouse.
+Specie number 68 is stegastes_partitus most common known as bicolor damselfish.
+Specie number 69 is meriones_unguiculatus most common known as Mongolian gerbil.
+Specie number 70 is mastacembelus_armatus most common known as zig-zag eel.
+Specie number 71 is choloepus_hoffmanni most common known as Hoffmann's two-fingered sloth.
+Specie number 72 is paramormyrops_kingsleyae most common known as Paramormyrops kingsleyae.
+Specie number 73 is melopsittacus_undulatus most common known as Budgie.
+Specie number 74 is amphiprion_ocellaris most common known as clown anemonefish.
+Specie number 75 is nothoprocta_perdicaria most common known as birds.
+Specie number 76 is urocitellus_parryii most common known as Arctic ground squirrel.
+Specie number 77 is vulpes_vulpes most common known as red fox.
+Specie number 78 is mus_musculus_lpj most common known as house mouse.
+Specie number 79 is mus_musculus_fvbnj most common known as house mouse.
+Specie number 80 is spermophilus_dauricus most common known as Daurian ground squirrel.
+Specie number 81 is mus_musculus_c57bl6nj most common known as house mouse.
+Specie number 82 is serinus_canaria most common known as common canary.
+Specie number 83 is poecilia_formosa most common known as Amazon molly.
+Specie number 84 is equus_asinus_asinus most common known as donkey.
+Specie number 85 is pundamilia_nyererei most common known as Makobe Island cichlid.
+Specie number 86 is peromyscus_maniculatus_bairdii most common known as Northern American deer mouse.
+Specie number 87 is jaculus_jaculus most common known as Lesser Egyptian jerboa.
+Specie number 88 is ciona_savignyi most common known as Sea squirt Ciona savignyi.
+Specie number 89 is xenopus_tropicalis most common known as western clawed frog.
+Specie number 90 is mus_caroli most common known as Ryukyu mouse.
+Specie number 91 is otolemur_garnettii most common known as small-eared galago.
+Specie number 92 is pteropus_vampyrus most common known as large flying fox.
+Specie number 93 is panthera_pardus most common known as leopard.
+Specie number 94 is ursus_maritimus most common known as Polar bear.
+Specie number 95 is gopherus_agassizii most common known as Agassiz's desert tortoise.
+Specie number 96 is meleagris_gallopavo most common known as domestic turkey.
+Specie number 97 is calidris_pugnax most common known as ruff.
+Specie number 98 is mus_spretus most common known as algerian mouse.
+Specie number 99 is phascolarctos_cinereus most common known as koala.
+Specie number 100 is marmota_marmota_marmota most common known as Alpine marmot.
+Specie number 101 is mus_musculus_129s1svimj most common known as house mouse.
+Specie number 102 is gallus_gallus most common known as chicken.
+Specie number 103 is ovis_aries most common known as Domestic sheep.
+Specie number 104 is gorilla_gorilla most common known as Western Lowland Gorilla.
+Specie number 105 is esox_lucius most common known as northern pike.
+Specie number 106 is ictalurus_punctatus most common known as channel catfish.
+Specie number 107 is microtus_ochrogaster most common known as vole.
+Specie number 108 is capra_hircus most common known as Goat.
+Specie number 109 is labrus_bergylta most common known as ballan wrasse.
+Specie number 110 is vicugna_pacos most common known as alpaca.
+Specie number 111 is anas_platyrhynchos_platyrhynchos most common known as common mallard.
+Specie number 112 is octodon_degus most common known as Degu.
+Specie number 113 is aotus_nancymaae most common known as Ma's night monkey.
+Specie number 114 is chinchilla_lanigera most common known as Long-tailed chinchilla.
+Specie number 115 is canis_lupus_dingo most common known as dingo.
+Specie number 116 is echinops_telfairi most common known as small Madagascar hedgehog.
+Specie number 117 is procavia_capensis most common known as cape rock hyrax.
+Specie number 118 is bison_bison_bison most common known as American bison.
+Specie number 119 is erinaceus_europaeus most common known as western European hedgehog.
+Specie number 120 is hippocampus_comes most common known as tiger tail seahorse.
+Specie number 121 is neovison_vison most common known as American mink.
+Specie number 122 is sphenodon_punctatus most common known as tuatara.
+Specie number 123 is periophthalmus_magnuspinnatus most common known as Periophthalmus magnuspinnatus.
+Specie number 124 is mus_musculus_casteij most common known as south eastern house mouse.
+Specie number 125 is scleropages_formosus most common known as Asian bonytongue.
+Specie number 126 is notechis_scutatus most common known as mainland tiger snake.
+Specie number 127 is eptatretus_burgeri most common known as Inshore hagfish.
+Specie number 128 is macaca_fascicularis most common known as Crab-eating macaque.
+Specie number 129 is pogona_vitticeps most common known as central bearded dragon.
+Specie number 130 is cebus_capucinus most common known as White-headed capuchin.
+Specie number 131 is dromaius_novaehollandiae most common known as emu.
+Specie number 132 is mus_musculus_balbcj most common known as house mouse.
+Specie number 133 is petromyzon_marinus most common known as sea lamprey.
+Specie number 134 is papio_anubis most common known as Olive baboon.
+Specie number 135 is macaca_mulatta most common known as rhesus monkey.
+Specie number 136 is loxodonta_africana most common known as African savanna elephant.
+Specie number 137 is bos_taurus most common known as cattle.
+Specie number 138 is kryptolebias_marmoratus most common known as mangrove rivulus.
+Specie number 139 is oryzias_latipes most common known as Japanese medaka HdrR.
+Specie number 140 is poecilia_reticulata most common known as guppy.
+Specie number 141 is salvator_merianae most common known as Argentine black and white tegu.
+Specie number 142 is amphilophus_citrinellus most common known as Midas cichlid.
+Specie number 143 is mus_musculus_dba2j most common known as house mouse.
+Specie number 144 is chrysemys_picta_bellii most common known as Western painted turtle.
+Specie number 145 is drosophila_melanogaster most common known as fruit fly.
+Specie number 146 is rhinopithecus_roxellana most common known as Golden snub-nosed monkey.
+Specie number 147 is ficedula_albicollis most common known as Collared flycatcher.
+Specie number 148 is colobus_angolensis_palliatus most common known as Angola colobus.
+Specie number 149 is seriola_dumerili most common known as greater amberjack.
+Specie number 150 is canis_familiaris most common known as dog.
+Specie number 151 is poecilia_mexicana most common known as shortfin molly.
+Specie number 152 is cavia_aperea most common known as Brazilian guinea pig.
+Specie number 153 is zonotrichia_albicollis most common known as white-throated sparrow.
+Specie number 154 is mus_spicilegus most common known as steppe mouse.
+Specie number 155 is mus_musculus_nzohlltj most common known as house mouse.
+Specie number 156 is sorex_araneus most common known as European shrew.
+Specie number 157 is oryzias_latipes_hni most common known as Japanese medaka HNI.
+Specie number 158 is propithecus_coquereli most common known as Coquerel's sifaka.
+Specie number 159 is cricetulus_griseus_crigri most common known as Chinese hamster.
+Specie number 160 is manacus_vitellinus most common known as golden-collared manakin.
+Specie number 161 is theropithecus_gelada most common known as gelada.
+Specie number 162 is mustela_putorius_furo most common known as Domestic ferret.
+Specie number 163 is xiphophorus_maculatus most common known as southern platyfish.
+Specie number 164 is monodelphis_domestica most common known as gray short-tailed opossum.
+Specie number 165 is piliocolobus_tephrosceles most common known as Ugandan red Colobus.
+Specie number 166 is cynoglossus_semilaevis most common known as tongue sole.
+Specie number 167 is apteryx_owenii most common known as little spotted kiwi.
+Specie number 168 is fukomys_damarensis most common known as Damara mole rat.
+Specie number 169 is crocodylus_porosus most common known as Australian saltwater crocodile.
+Specie number 170 is amphiprion_percula most common known as orange clownfish.
+Specie number 171 is haplochromis_burtoni most common known as Burton's mouthbrooder.
+Specie number 172 is microcebus_murinus most common known as gray mouse lemur.
+Specie number 173 is ciona_intestinalis most common known as Sea squirt Ciona intestinalis.
+Specie number 174 is saccharomyces_cerevisiae most common known as baker's yeast.
+Specie number 175 is equus_caballus most common known as horse.
+Specie number 176 is oryzias_melastigma most common known as Indian medaka.
+Specie number 177 is sarcophilus_harrisii most common known as Tasmanian devil.
+Specie number 178 is anolis_carolinensis most common known as green anole.
+Specie number 179 is rhinopithecus_bieti most common known as Black snub-nosed monkey.
+Specie number 180 is gadus_morhua most common known as Atlantic cod.
+Specie number 181 is chlorocebus_sabaeus most common known as African green monkey.
+Specie number 182 is mola_mola most common known as ocean sunfish.
+Specie number 183 is homo_sapiens most common known as human.
+Specie number 184 is poecilia_latipinna most common known as sailfin molly.
+Specie number 185 is mus_musculus_aj most common known as house mouse.
+Specie number 186 is parus_major most common known as Great Tit.
+Specie number 187 is mus_musculus most common known as house mouse.
+Specie number 188 is astyanax_mexicanus most common known as Mexican tetra.
+Specie number 189 is oryzias_latipes_hsok most common known as Japanese medaka HSOK.
+Specie number 190 is mus_musculus_akrj most common known as house mouse.
+Specie number 191 is rattus_norvegicus most common known as Norway rat.
+Specie number 192 is apteryx_rowi most common known as Okarito brown kiwi.
+Specie number 193 is heterocephalus_glaber_male most common known as naked mole-rat.
+Specie number 194 is mus_musculus_nodshiltj most common known as house mouse.
+Specie number 195 is carlito_syrichta most common known as Philippine tarsier.
+Specie number 196 is pan_troglodytes most common known as chimpanzee.
+Specie number 197 is neolamprologus_brichardi most common known as lyretail cichlid.
+Specie number 198 is felis_catus most common known as domestic cat.
+Specie number 199 is ursus_americanus most common known as American black bear.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/listSpecies?limit=10"
+Endpoint (Tested through the main page): "/listSpecies?limit=10&subm=GO!"
+Give an error in the limit, for example, using as a limit a letter.
+Response from the server:
+listSpecies page
+Your limit is not a number, all species will be listed.
+Specie number 1 is danio_rerio most common known as zebrafish.
+Specie number 2 is cricetulus_griseus_picr most common known as Chinese hamster.
+Specie number 3 is gasterosteus_aculeatus most common known as three-spined stickleback.
+Specie number 4 is takifugu_rubripes most common known as torafugu.
+Specie number 5 is cercocebus_atys most common known as Sooty mangabey.
+Specie number 6 is pygocentrus_nattereri most common known as red-bellied piranha.
+Specie number 7 is myotis_lucifugus most common known as little brown bat.
+Specie number 8 is seriola_lalandi_dorsalis most common known as yellowtail amberjack.
+Specie number 9 is ochotona_princeps most common known as American pika.
+Specie number 10 is mus_musculus_cbaj most common known as house mouse.
+Specie number 11 is cricetulus_griseus_chok1gshd most common known as Chinese hamster.
+Specie number 12 is xiphophorus_couchianus most common known as Monterrey platyfish.
+Specie number 13 is panthera_tigris_altaica most common known as Tiger.
+Specie number 14 is dipodomys_ordii most common known as Ord's kangaroo rat.
+Specie number 15 is junco_hyemalis most common known as dark-eyed junco.
+Specie number 16 is callithrix_jacchus most common known as white-tufted-ear marmoset.
+Specie number 17 is macaca_nemestrina most common known as Pig-tailed macaque.
+Specie number 18 is monopterus_albus most common known as swamp eel.
+Specie number 19 is fundulus_heteroclitus most common known as mummichog.
+Specie number 20 is mus_pahari most common known as Shrew mouse.
+Specie number 21 is ailuropoda_melanoleuca most common known as giant panda.
+Specie number 22 is tetraodon_nigroviridis most common known as spotted green pufferfish.
+Specie number 23 is gambusia_affinis most common known as western mosquitofish.
+Specie number 24 is pan_paniscus most common known as bonobo.
+Specie number 25 is astatotilapia_calliptera most common known as eastern happy.
+Specie number 26 is numida_meleagris most common known as helmeted guineafowl.
+Specie number 27 is mus_musculus_wsbeij most common known as western european house mouse.
+Specie number 28 is lepisosteus_oculatus most common known as Spotted gar.
+Specie number 29 is calidris_pygmaea most common known as Spoon-billed sandpiper.
+Specie number 30 is cyanistes_caeruleus most common known as blue tit.
+Specie number 31 is bos_mutus most common known as wild yak.
+Specie number 32 is apteryx_haastii most common known as Great spotted kiwi.
+Specie number 33 is cyprinodon_variegatus most common known as sheepshead minnow.
+Specie number 34 is castor_canadensis most common known as American beaver.
+Specie number 35 is lepidothrix_coronata most common known as blue-crowned manakin.
+Specie number 36 is pongo_abelii most common known as Bornean orangutan.
+Specie number 37 is mandrillus_leucophaeus most common known as Drill.
+Specie number 38 is caenorhabditis_elegans most common known as C.elegans.
+Specie number 39 is scophthalmus_maximus most common known as turbot.
+Specie number 40 is oreochromis_niloticus most common known as Nile tilapia.
+Specie number 41 is taeniopygia_guttata most common known as zebra finch.
+Specie number 42 is pelodiscus_sinensis most common known as Chinese softshell turtle.
+Specie number 43 is cavia_porcellus most common known as domestic guinea pig.
+Specie number 44 is sus_scrofa most common known as pig.
+Specie number 45 is lonchura_striata_domestica most common known as Bengalese finch.
+Specie number 46 is maylandia_zebra most common known as zebra mbuna.
+Specie number 47 is ornithorhynchus_anatinus most common known as platypus.
+Specie number 48 is chelonoidis_abingdonii most common known as Abingdon island giant tortoise.
+Specie number 49 is saimiri_boliviensis_boliviensis most common known as Bolivian squirrel monkey.
+Specie number 50 is coturnix_japonica most common known as Japanese quail.
+Specie number 51 is nomascus_leucogenys most common known as Northern white-cheeked gibbon.
+Specie number 52 is notamacropus_eugenii most common known as tammar wallaby.
+Specie number 53 is prolemur_simus most common known as greater bamboo lemur.
+Specie number 54 is latimeria_chalumnae most common known as coelacanth.
+Specie number 55 is ictidomys_tridecemlineatus most common known as thirteen-lined ground squirrel.
+Specie number 56 is mus_musculus_pwkphj most common known as eastern european house mouse.
+Specie number 57 is tupaia_belangeri most common known as northern tree shrew.
+Specie number 58 is acanthochromis_polyacanthus most common known as spiny chromis.
+Specie number 59 is tursiops_truncatus most common known as bottlenosed dolphin.
+Specie number 60 is mesocricetus_auratus most common known as Golden Hamster.
+Specie number 61 is heterocephalus_glaber_female most common known as naked mole-rat.
+Specie number 62 is nannospalax_galili most common known as Upper Galilee mountains blind mole rat.
+Specie number 63 is dasypus_novemcinctus most common known as nine-banded armadillo.
+Specie number 64 is anser_brachyrhynchus most common known as pink-footed goose.
+Specie number 65 is oryctolagus_cuniculus most common known as rabbit.
+Specie number 66 is anabas_testudineus most common known as climbing perch.
+Specie number 67 is mus_musculus_c3hhej most common known as house mouse.
+Specie number 68 is stegastes_partitus most common known as bicolor damselfish.
+Specie number 69 is meriones_unguiculatus most common known as Mongolian gerbil.
+Specie number 70 is mastacembelus_armatus most common known as zig-zag eel.
+Specie number 71 is choloepus_hoffmanni most common known as Hoffmann's two-fingered sloth.
+Specie number 72 is paramormyrops_kingsleyae most common known as Paramormyrops kingsleyae.
+Specie number 73 is melopsittacus_undulatus most common known as Budgie.
+Specie number 74 is amphiprion_ocellaris most common known as clown anemonefish.
+Specie number 75 is nothoprocta_perdicaria most common known as birds.
+Specie number 76 is urocitellus_parryii most common known as Arctic ground squirrel.
+Specie number 77 is vulpes_vulpes most common known as red fox.
+Specie number 78 is mus_musculus_lpj most common known as house mouse.
+Specie number 79 is mus_musculus_fvbnj most common known as house mouse.
+Specie number 80 is spermophilus_dauricus most common known as Daurian ground squirrel.
+Specie number 81 is mus_musculus_c57bl6nj most common known as house mouse.
+Specie number 82 is serinus_canaria most common known as common canary.
+Specie number 83 is poecilia_formosa most common known as Amazon molly.
+Specie number 84 is equus_asinus_asinus most common known as donkey.
+Specie number 85 is pundamilia_nyererei most common known as Makobe Island cichlid.
+Specie number 86 is peromyscus_maniculatus_bairdii most common known as Northern American deer mouse.
+Specie number 87 is jaculus_jaculus most common known as Lesser Egyptian jerboa.
+Specie number 88 is ciona_savignyi most common known as Sea squirt Ciona savignyi.
+Specie number 89 is xenopus_tropicalis most common known as western clawed frog.
+Specie number 90 is mus_caroli most common known as Ryukyu mouse.
+Specie number 91 is otolemur_garnettii most common known as small-eared galago.
+Specie number 92 is pteropus_vampyrus most common known as large flying fox.
+Specie number 93 is panthera_pardus most common known as leopard.
+Specie number 94 is ursus_maritimus most common known as Polar bear.
+Specie number 95 is gopherus_agassizii most common known as Agassiz's desert tortoise.
+Specie number 96 is meleagris_gallopavo most common known as domestic turkey.
+Specie number 97 is calidris_pugnax most common known as ruff.
+Specie number 98 is mus_spretus most common known as algerian mouse.
+Specie number 99 is phascolarctos_cinereus most common known as koala.
+Specie number 100 is marmota_marmota_marmota most common known as Alpine marmot.
+Specie number 101 is mus_musculus_129s1svimj most common known as house mouse.
+Specie number 102 is gallus_gallus most common known as chicken.
+Specie number 103 is ovis_aries most common known as Domestic sheep.
+Specie number 104 is gorilla_gorilla most common known as Western Lowland Gorilla.
+Specie number 105 is esox_lucius most common known as northern pike.
+Specie number 106 is ictalurus_punctatus most common known as channel catfish.
+Specie number 107 is microtus_ochrogaster most common known as vole.
+Specie number 108 is capra_hircus most common known as Goat.
+Specie number 109 is labrus_bergylta most common known as ballan wrasse.
+Specie number 110 is vicugna_pacos most common known as alpaca.
+Specie number 111 is anas_platyrhynchos_platyrhynchos most common known as common mallard.
+Specie number 112 is octodon_degus most common known as Degu.
+Specie number 113 is aotus_nancymaae most common known as Ma's night monkey.
+Specie number 114 is chinchilla_lanigera most common known as Long-tailed chinchilla.
+Specie number 115 is canis_lupus_dingo most common known as dingo.
+Specie number 116 is echinops_telfairi most common known as small Madagascar hedgehog.
+Specie number 117 is procavia_capensis most common known as cape rock hyrax.
+Specie number 118 is bison_bison_bison most common known as American bison.
+Specie number 119 is erinaceus_europaeus most common known as western European hedgehog.
+Specie number 120 is hippocampus_comes most common known as tiger tail seahorse.
+Specie number 121 is neovison_vison most common known as American mink.
+Specie number 122 is sphenodon_punctatus most common known as tuatara.
+Specie number 123 is periophthalmus_magnuspinnatus most common known as Periophthalmus magnuspinnatus.
+Specie number 124 is mus_musculus_casteij most common known as south eastern house mouse.
+Specie number 125 is scleropages_formosus most common known as Asian bonytongue.
+Specie number 126 is notechis_scutatus most common known as mainland tiger snake.
+Specie number 127 is eptatretus_burgeri most common known as Inshore hagfish.
+Specie number 128 is macaca_fascicularis most common known as Crab-eating macaque.
+Specie number 129 is pogona_vitticeps most common known as central bearded dragon.
+Specie number 130 is cebus_capucinus most common known as White-headed capuchin.
+Specie number 131 is dromaius_novaehollandiae most common known as emu.
+Specie number 132 is mus_musculus_balbcj most common known as house mouse.
+Specie number 133 is petromyzon_marinus most common known as sea lamprey.
+Specie number 134 is papio_anubis most common known as Olive baboon.
+Specie number 135 is macaca_mulatta most common known as rhesus monkey.
+Specie number 136 is loxodonta_africana most common known as African savanna elephant.
+Specie number 137 is bos_taurus most common known as cattle.
+Specie number 138 is kryptolebias_marmoratus most common known as mangrove rivulus.
+Specie number 139 is oryzias_latipes most common known as Japanese medaka HdrR.
+Specie number 140 is poecilia_reticulata most common known as guppy.
+Specie number 141 is salvator_merianae most common known as Argentine black and white tegu.
+Specie number 142 is amphilophus_citrinellus most common known as Midas cichlid.
+Specie number 143 is mus_musculus_dba2j most common known as house mouse.
+Specie number 144 is chrysemys_picta_bellii most common known as Western painted turtle.
+Specie number 145 is drosophila_melanogaster most common known as fruit fly.
+Specie number 146 is rhinopithecus_roxellana most common known as Golden snub-nosed monkey.
+Specie number 147 is ficedula_albicollis most common known as Collared flycatcher.
+Specie number 148 is colobus_angolensis_palliatus most common known as Angola colobus.
+Specie number 149 is seriola_dumerili most common known as greater amberjack.
+Specie number 150 is canis_familiaris most common known as dog.
+Specie number 151 is poecilia_mexicana most common known as shortfin molly.
+Specie number 152 is cavia_aperea most common known as Brazilian guinea pig.
+Specie number 153 is zonotrichia_albicollis most common known as white-throated sparrow.
+Specie number 154 is mus_spicilegus most common known as steppe mouse.
+Specie number 155 is mus_musculus_nzohlltj most common known as house mouse.
+Specie number 156 is sorex_araneus most common known as European shrew.
+Specie number 157 is oryzias_latipes_hni most common known as Japanese medaka HNI.
+Specie number 158 is propithecus_coquereli most common known as Coquerel's sifaka.
+Specie number 159 is cricetulus_griseus_crigri most common known as Chinese hamster.
+Specie number 160 is manacus_vitellinus most common known as golden-collared manakin.
+Specie number 161 is theropithecus_gelada most common known as gelada.
+Specie number 162 is mustela_putorius_furo most common known as Domestic ferret.
+Specie number 163 is xiphophorus_maculatus most common known as southern platyfish.
+Specie number 164 is monodelphis_domestica most common known as gray short-tailed opossum.
+Specie number 165 is piliocolobus_tephrosceles most common known as Ugandan red Colobus.
+Specie number 166 is cynoglossus_semilaevis most common known as tongue sole.
+Specie number 167 is apteryx_owenii most common known as little spotted kiwi.
+Specie number 168 is fukomys_damarensis most common known as Damara mole rat.
+Specie number 169 is crocodylus_porosus most common known as Australian saltwater crocodile.
+Specie number 170 is amphiprion_percula most common known as orange clownfish.
+Specie number 171 is haplochromis_burtoni most common known as Burton's mouthbrooder.
+Specie number 172 is microcebus_murinus most common known as gray mouse lemur.
+Specie number 173 is ciona_intestinalis most common known as Sea squirt Ciona intestinalis.
+Specie number 174 is saccharomyces_cerevisiae most common known as baker's yeast.
+Specie number 175 is equus_caballus most common known as horse.
+Specie number 176 is oryzias_melastigma most common known as Indian medaka.
+Specie number 177 is sarcophilus_harrisii most common known as Tasmanian devil.
+Specie number 178 is anolis_carolinensis most common known as green anole.
+Specie number 179 is rhinopithecus_bieti most common known as Black snub-nosed monkey.
+Specie number 180 is gadus_morhua most common known as Atlantic cod.
+Specie number 181 is chlorocebus_sabaeus most common known as African green monkey.
+Specie number 182 is mola_mola most common known as ocean sunfish.
+Specie number 183 is homo_sapiens most common known as human.
+Specie number 184 is poecilia_latipinna most common known as sailfin molly.
+Specie number 185 is mus_musculus_aj most common known as house mouse.
+Specie number 186 is parus_major most common known as Great Tit.
+Specie number 187 is mus_musculus most common known as house mouse.
+Specie number 188 is astyanax_mexicanus most common known as Mexican tetra.
+Specie number 189 is oryzias_latipes_hsok most common known as Japanese medaka HSOK.
+Specie number 190 is mus_musculus_akrj most common known as house mouse.
+Specie number 191 is rattus_norvegicus most common known as Norway rat.
+Specie number 192 is apteryx_rowi most common known as Okarito brown kiwi.
+Specie number 193 is heterocephalus_glaber_male most common known as naked mole-rat.
+Specie number 194 is mus_musculus_nodshiltj most common known as house mouse.
+Specie number 195 is carlito_syrichta most common known as Philippine tarsier.
+Specie number 196 is pan_troglodytes most common known as chimpanzee.
+Specie number 197 is neolamprologus_brichardi most common known as lyretail cichlid.
+Specie number 198 is felis_catus most common known as domestic cat.
+Specie number 199 is ursus_americanus most common known as American black bear.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/karyotype?specie=human"
+Endpoint (Tested through the main page): "/karyotype?specie=human&subm=GO!"
+Response from the server:
+karyotype page
+The karyotype is compassed by the following elements: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, X, Y.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/karyotype"
+Endpoint (Tested directly): "/karyotype?spec=human"
+Endpoint (Tested directly):"http://localhost:8000/karyotype?specie="
+Endpoint (Tested through the main page): "/karyotype?specie=&subm=GO%21"
+Error endpoint, not giving in the request the parameter specie.
+Response from the server:
+error page
+The function kayotype requires an specie parameter.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/karyotype?specie=mouse"
+Endpoint (Tested through the main page): "/karyotype?specie=mouse&subm=GO!"
+Try for the mouse specie.
+Response from the server:
+karyotype page
+The karyotype is compassed by the following elements: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, X, Y.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/karyotype?specie=humann"
+Endpoint (Tested through the main page): "/karyotype?specie=humann&subm=GO%21"
+Error given the specie.
+Response from the server:
+error page
+Error that comes from the data base that is the following: Can not find internal name for species 'humann'. If the ID does not correspond to the gene it should be, make sure that you have typed it correctly. If you have typed it correctly, we do not have that symbol on the database.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/chromosomeLength?specie=mouse&chromo=18"
+Endpoint (Tested through the main page): "/chromosomeLength?specie=mouse&chromo=18&subm=GO!"
+Endpoint (Tested directly): "/chromosomeLength?chromo=18&specie=mouse"
+The last endpoint shows that you are allowed to change the order of the parameters if you test it directly.
+Response from the server:
+chromosomeLength page
+Your chromosome has a length of 90702639.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/chromosomeLength"
+Endpoint (Tested directly): "/chromosomeLength?specie=mouse"
+Endpoint (Tested through the main page): "/chromosomeLength?specie=mouse&chromo=&subm=GO!"
+This endpoint shows the error page shows when a page is missing.
+Response from the server:
+error page
+The function chromosome Length requires an specie and chromo parameter.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/chromosomeLength?specie=mouse&chromo=f"
+Endpoint (Tested through the main page): "/chromosomeLength?specie=mouse&chromo=f&subm=GO!"
+The endpoint shows what happen when there is an error in the chromosome.
+Response from the server:
+chromosomeLength page
+Your chromosome has not been found in our data base.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/chromosomeLength?specie=humann"
+Endpoint (Tested through the main page): "/chromosomeLength?specie=humann&chromo=&subm=GO!"
+If you have not introduced a parameter it will be shown and if other parameter is wrong the server will not return it.
+error page
+The function chromosome Length requires an specie and chromo parameter.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/chromosomeLength?specie=humann&chromo=ac"
+Endpoint (Tested through the main page): "/chromosomeLength?specie=humann&chromo=ac&subm=GO!"
+Error given in the species, it does not check chromo and return the error from Genome database with an advertisement, in this case not needed.
+Response from the server:
+error page
+Error that comes from the data base that is the following: Can not find internal name for species 'humann'. If the ID does not correspond to the gene it should be, make sure that you have typed it correctly. If you have typed it correctly, we do not have that symbol on the database.
+If you want to go back to the initial page:
+Click here.

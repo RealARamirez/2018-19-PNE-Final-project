@@ -37,7 +37,7 @@ def valid(data):
     try:
         msg = "Error that comes from the data base that is the following: "
         msg += data["error"]
-        msg += " If the ID does not correspond to the gene it should be, make sure that you have typed it correctly." \
+        msg += ". If the ID does not correspond to the gene it should be, make sure that you have typed it correctly." \
                " If you have typed it correctly, we do not have that symbol on the database."
         value = [True, msg]
     except (KeyError, TypeError):

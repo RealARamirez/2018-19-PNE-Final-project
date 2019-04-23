@@ -10,6 +10,8 @@ from Client import Client, valid
 from HTML_maker import HTMLFile
 from JSON_maker import JSONFile
 
+socketserver.TCPServer.allow_reuse_address = True
+
 # Define the port
 PORT = 8000
 
