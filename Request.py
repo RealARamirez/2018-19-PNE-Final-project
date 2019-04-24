@@ -90,10 +90,10 @@ class Request:
                 else:
                     return {"type": "error", "value": "The function gene Info requires a gene parameter."}
             elif self.data["endpoint"] == "/geneList":
-                if mapper(self.data, "chromo")[0] and mapper(self.data, "start") and mapper(self.data, "end"):
+                if mapper(self.data, "chromo")[0] and mapper(self.data, "start")[0] and mapper(self.data, "end")[0]:
                     return {"type": "client", "value": "/overlap/region/human/{}:{}-{}?feature=gene;content-type=application/json".format(self.data[mapper(self.data, "chromo")[1]]["value"], self.data[mapper(self.data, "start")[1]]["value"], self.data[mapper(self.data, "end")[1]]["value"])}
                 else:
-                    return {"type": "error", "value": "The function gene List requires a gene parameter."}
+                    return {"type": "error", "value": "The function gene List requires a chrono, an start and an end parameter."}
         else:
             return {"type": "error", "value": "Sorry, we do not perform {} operation, please check that you have typed it correctly.".format(self.data["endpoint"][1:])}
 

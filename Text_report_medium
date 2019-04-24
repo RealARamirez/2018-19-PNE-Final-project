@@ -116,3 +116,41 @@ Base T: 19.7%
 Base G: 32.0%
 If you want to go back to the initial page:
 Click here.
+
+Endpoint (Tested directly): "/geneList?chromo=1&start=0&end=30000"
+Endpoint (Tested through the main page): "/geneList?chromo=1&start=0&end=30000&subm=GO%21"
+Response from the server:
+geneList page
+Gene ENSG00000223972 which assembly name is : GRCh38.
+Gene ENSG00000227232 which assembly name is : GRCh38.
+Gene ENSG00000278267 which assembly name is : GRCh38.
+Gene ENSG00000243485 which assembly name is : GRCh38.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/geneList?chromo=1"
+Endpoint (Tested through the main page): "/geneList?chromo=1&start=&end=&subm=GO%21"
+This endpoint shows the error page when one or more parameters are not given.
+Response from the server:
+error page
+The function gene List requires a chrono, an start and an end parameter.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/geneList?chromo=1&start=a&end=b"
+Endpoint (Tested through the main page): "/geneList?chromo=1&start=a&end=b&subm=GO%21"
+The standard response when one or more parameters are given wrong.
+Response from the server:
+error page
+Error that comes from the data base that is the following: a is not a valid start. If the ID does not correspond to the gene it should be, make sure that you have typed it correctly. If you have typed it correctly, we do not have that symbol on the database.
+If you want to go back to the initial page:
+Click here.
+
+Endpoint (Tested directly): "/geneList?chromo=a&start=0&end=2"
+Endpoint (Tested through the main page): "/geneList?chromo=a&start=0&end=2&subm=GO%21"
+When the error is in the chromosome, a similar message is responded.
+Response from the server:
+error page
+Error that comes from the data base that is the following: No slice found for location a:0-2. If the ID does not correspond to the gene it should be, make sure that you have typed it correctly. If you have typed it correctly, we do not have that symbol on the database.
+If you want to go back to the initial page:
+Click here.
