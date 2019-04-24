@@ -253,8 +253,8 @@ Specie number 10 is saimiri_boliviensis_boliviensis most common known as Bolivia
 If you want to go back to the initial page:
 Click here.
 
-Endpoint (Tested directly): "/listSpecies?limit=10"
-Endpoint (Tested through the main page): "/listSpecies?limit=10&subm=GO!"
+Endpoint (Tested directly): "/listSpecies?limit=210"
+Endpoint (Tested through the main page): "/listSpecies?limit=210&subm=GO!"
 Use a limit higher than the number of species.
 Response from the server:
 listSpecies page
@@ -461,8 +461,8 @@ Specie number 199 is ursus_americanus most common known as American black bear.
 If you want to go back to the initial page:
 Click here.
 
-Endpoint (Tested directly): "/listSpecies?limit=10"
-Endpoint (Tested through the main page): "/listSpecies?limit=10&subm=GO!"
+Endpoint (Tested directly): "/listSpecies?limit=a"
+Endpoint (Tested through the main page): "/listSpecies?limit=a&subm=GO!"
 Give an error in the limit, for example, using as a limit a letter.
 Response from the server:
 listSpecies page

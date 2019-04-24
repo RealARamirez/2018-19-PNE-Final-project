@@ -45,12 +45,12 @@ It belongs to 10 chromosome.
 If you want to go back to the initial page:
 Click here.
 
-Endpoint (Tested directly): "/geneSeq"
-Endpoint (Tested through the main page): "/geneSeq?gene=&subm=GO!"
+Endpoint (Tested directly): "/geneInfo"
+Endpoint (Tested through the main page): "/geneInfo?gene=&subm=GO!"
 Endpoint that test the error when a no parameters is introduced.
 Response from the server:
 error page
-This function requires a gene parameter.
+The function gene Info requires a gene parameter.
 If you want to go back to the initial page:
 Click here.
 
