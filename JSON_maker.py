@@ -9,6 +9,7 @@ from Seq import Seq
 # It will crate listSpecies dictionary
 def listSpecies(data, parameters):
     dictionary = {}
+    dictionary["Specie"] = []
     top = len(data["species"])
     for elem in parameters:
         if elem["type"] == "limit":
@@ -22,16 +23,17 @@ def listSpecies(data, parameters):
                 top = len(data["species"])
                 dictionary["detected_error"] = "Your limit is not a number, all species will be listed."
     for b in range(top):
-        dictionary["Specie_"+str(b+1)] = "Specie {} most common known as {}.".format(data["species"][b]["name"], data["species"][b]["common_name"])
+        dictionary["Specie"].append({"specie": str(data["species"][b]["name"]), "common_name": str(data["species"][b]["common_name"])})
     return dictionary
 
 # It will create karyotype dictionary
 def karyotype(data):
     dictionary = {}
+    dictionary["karyotype"] = []
     b = 1
     for elem in data["karyotype"]:
         if elem == "MT": continue
-        else: dictionary["karyotype_"+str(b)], b = elem, b+1
+        else: dictionary["karyotype"].append(str(elem))
     return dictionary
 
 # For creating chromosomeLength dictionary
@@ -88,10 +90,11 @@ def geneCalc(data):
 # Dictionary for geneList
 def geneList(data):
     dictionary = {}
+    dictionary["gene"] = []
     if len(data) > 0:
         b = 1
         for elem in data:
-            dictionary["gene_n"+str(b)] = {"gene_id":str(elem["gene_id"]), "gene_assembly_name": str(elem["assembly_name"])}
+            dictionary["gene"].append({"id":str(elem["gene_id"]), "assembly_name": str(elem["assembly_name"])})
             b += 1
     else:
         dictionary["error"] = "There are not genes in this part of the chromosome.</p>"
