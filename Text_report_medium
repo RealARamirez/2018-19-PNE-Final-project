@@ -10,7 +10,7 @@ Click here.
 
 Endpoint (Tested directly): "/geneSeq"
 Endpoint (Tested through the main page): "/geneSeq?gene=&subm=GO!"
-Endpoint that test the error when a no parameters is introduced.
+Endpoint that test the error when a no parameter is introduced.
 Response from the server:
 error page
 This function requires a gene parameter.

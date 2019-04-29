@@ -719,7 +719,7 @@ Click here.
 Endpoint (Tested directly): "/chromosomeLength"
 Endpoint (Tested directly): "/chromosomeLength?specie=mouse"
 Endpoint (Tested through the main page): "/chromosomeLength?specie=mouse&chromo=&subm=GO!"
-This endpoint shows the error page shows when a page is missing.
+This endpoint shows the error page shows when a parameter is missing.
 Response from the server:
 error page
 The function chromosome Length requires an specie and chromo parameter.
