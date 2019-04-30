@@ -40,7 +40,7 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
             content = favicon.read()
             favicon.close()
             self.send_response(200)
-            self.send_header('Content-Type', 'image/jpeg')
+            self.send_header('Content-Type', 'image/x-icon')
             self.send_header('Content-Length', len(content))
             self.end_headers()
             self.wfile.write(content)
